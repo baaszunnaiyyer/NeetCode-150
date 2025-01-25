@@ -4,7 +4,7 @@ public class Group_Anagram {
 
     public static List<List<String>> GroupAnagram(String[] strs) {
 
-        // checcking if the given list is Empty or not
+        // checking if the given list is Empty or not
         if(strs.length == 0){
             return new ArrayList<>();
         }
@@ -22,12 +22,12 @@ public class Group_Anagram {
                 count[c-'a']++;
             }
 
-            //Creating a String Builder so it can be Menuplated
+            //Creating a String Builder so it can be Manipulated
             StringBuilder sb = new StringBuilder();
 
             //appending the String in that Sting Builder
             for(int i = 0; i<26; i++){
-                sb.append("#");
+//                sb.append("#");
                 sb.append(count[i]);
             }
 
@@ -37,12 +37,12 @@ public class Group_Anagram {
                 ansMap.put(key, new ArrayList<>());
             }
 
-            //if it does exists then it will return the arraylist on ansMap.get(key) and with add() it will add the value
+            //if it exists then it will return the arraylist on ansMap.get(key) and with add() it will add the value
             ansMap.get(key).add(s);
         }
 
         //returns the ArrayList as it was given
-        return new ArrayList<>(ansMap.values());
+        return new ArrayList(ansMap.values());
     }
 
     public static void main(String[] args) {
