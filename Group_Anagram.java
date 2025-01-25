@@ -10,7 +10,7 @@ public class Group_Anagram {
         }
 
         //creating a hashMap so that we can store each element on the basis of key and value pairs
-        Map<String, List> ansMap = new HashMap<>();
+        Map<String, List<String>> ansMap = new HashMap<>();
 
         // creating the total length of count of all alphabets
         int[] count = new int[26];
@@ -42,7 +42,7 @@ public class Group_Anagram {
         }
 
         //returns the ArrayList as it was given
-        return new ArrayList(ansMap.values());
+        return new ArrayList<>(ansMap.values());
     }
 
     public static void main(String[] args) {
