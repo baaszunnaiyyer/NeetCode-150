@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class TwoSum {
-    public int[] twoSum(int[] nums, int target){
+    public static int[] twoSum(int[] nums, int target){
 
         // Creating hashmap to store all the values and there indexes as Key and Value
         HashMap<Integer,Integer> map = new HashMap<>();
@@ -20,5 +20,10 @@ public class TwoSum {
         }
 
         return new int[] {};
+    }
+
+    public static void main(String[] args) {
+        int[] x =  {1,2,3,4};
+        twoSum(x, 4);
     }
 }
