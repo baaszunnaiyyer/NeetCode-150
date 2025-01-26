@@ -27,3 +27,18 @@ public class TwoSum {
         twoSum(x, 4);
     }
 }
+
+//
+//HashMap<Integer, Integer> map = new HashMap<>();
+//6
+//        for(int i=0; i < nums.lenght; i++){
+//int compliment = target - nums[i];
+//
+//            if(map.containsKey(compliment)){
+//        return new int[] {map.get(compliment), i};
+//        }
+//
+//        map.put(nums[i],i);
+//        }
+//
+//                return new int[] {};
