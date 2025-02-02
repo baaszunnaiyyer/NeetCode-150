@@ -1,9 +1,10 @@
+import java.util.Arrays;
 import java.util.Deque;
 import java.util.LinkedList;
 
 public class SlidingWindowMaximum {
 
-    public int[] maxSlidingWindow(int[] numbs, int k){
+    public static int[] maxSlidingWindow(int[] numbs, int k){
         if(numbs == null || numbs.length == 0 || k<=0)
             return new int[0];
 
@@ -26,6 +27,11 @@ public class SlidingWindowMaximum {
             }
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        int[] numbs = {1,3,-1,-3,5,3,6,7};
+        System.out.println(Arrays.toString(maxSlidingWindow(numbs, 3)));
     }
 
 }
