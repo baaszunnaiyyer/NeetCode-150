@@ -16,9 +16,9 @@ public class FindMedianOfTowSortedArray {
             int partY = ((x+y+1)/2)-partX;
 
             int xLeft = partX == 0 ? Integer.MIN_VALUE : nums1[partX-1];
-            int xRight = partX == 0 ? Integer.MAX_VALUE : nums1[partX];
+            int xRight = partX == x ? Integer.MAX_VALUE : nums1[partX];
             int yLeft = partY == 0 ? Integer.MIN_VALUE : nums2[partY-1];
-            int yRight = partY == 0 ? Integer.MAX_VALUE : nums2[partY];
+            int yRight = partY == y ? Integer.MAX_VALUE : nums2[partY];
 
             if(xLeft <= yRight && yLeft <= xRight){
                 if((x+y)%2 == 0 ){
