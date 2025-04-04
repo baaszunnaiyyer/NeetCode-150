@@ -20,6 +20,7 @@ public class MergeTowList {
                     merge.next = list2;
                     list2= list2.next;
                 }
+                merge = merge.next;
             }
             if(merge.next == list1 && list1 == null){
                 merge.next = list2;
